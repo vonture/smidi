@@ -1,0 +1,26 @@
+---
+Language: Cpp
+Standard: Auto
+UseTab: Never
+IndentWidth: 4
+AllowShortIfStatementsOnASingleLine: false
+IndentCaseLabels: false
+ColumnLimit: 140
+NamespaceIndentation: All
+FixNamespaceComments: true
+SortIncludes: true
+AlwaysBreakTemplateDeclarations: true
+BreakBeforeBraces: Custom
+PointerAlignment: Left
+BreakConstructorInitializers: BeforeComma
+AllowShortFunctionsOnASingleLine: Empty
+BraceWrapping:
+    AfterClass: true
+    AfterControlStatement: true
+    AfterEnum: true
+    AfterFunction: true
+    AfterNamespace: true
+    AfterStruct: true
+    AfterUnion: true
+    BeforeCatch: true
+    BeforeElse: true
