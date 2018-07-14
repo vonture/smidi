@@ -1,15 +1,18 @@
-add_executable(list_devices
-    list_devices.cpp
-)
+function(add_sample name)
+    add_executable(${name}
+        ${name}.cpp
+    )
 
-target_link_libraries(list_devices
-    smidi
-)
+    target_link_libraries(${name}
+        smidi
+        smidi_ext
+    )
 
-add_executable(simple_output
-    simple_output.cpp
-)
+    set_target_properties(${name} PROPERTIES
+        CXX_STANDARD 17
+    )
+endfunction()
 
-target_link_libraries(simple_output
-    smidi
-)
+add_sample("list_devices")
+add_sample("simple_output")
+add_sample("simple_input")
